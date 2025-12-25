@@ -1,6 +1,6 @@
 .logo {
-  width: 92px;
-  margin-bottom: 1.75rem;
+  width: 88px;
+  height: auto;
   opacity: 0.95;
   filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.45));
 }
