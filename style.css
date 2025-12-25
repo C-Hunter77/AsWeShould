@@ -4,3 +4,45 @@
   opacity: 0.95;
   filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.45));
 }
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding: 64px;
+  border-radius: 28px;
+
+  background: linear-gradient(
+    135deg,
+    #0f766e, /* teal */
+    #14532d  /* deep green */
+  );
+}
+
+.hero-text {
+  max-width: 560px;
+}
+
+.hero-text h1 {
+  font-size: clamp(32px, 4vw, 52px);
+  margin: 0 0 16px;
+  letter-spacing: -0.02em;
+}
+
+.hero-text .lead {
+  font-size: clamp(16px, 2vw, 20px);
+  opacity: 0.95;
+}
+
+/* Mobile stack */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 24px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+}
