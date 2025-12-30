@@ -42,9 +42,9 @@
    PAUSE / VIDEO LANDING FIX
    ========================= */
 #pause{
-  margin-top: 28px;   /* smaller than the global 48px */
+  margin-top: 14px;   /* smaller than the global 48px */
   padding-top: 0;     /* remove the extra top padding that creates that dead space */
-  scroll-margin-top: 72px; /* fine-tune anchor landing */
+  scroll-margin-top: 36px; /* fine-tune anchor landing */
 }
 
 
