@@ -44,7 +44,7 @@
 
 /* Ensure anchor jump leaves room for heading + subtext */
 section {
-  scroll-margin-top: 72px;
+  scroll-margin-top: 8px;
 }
 
 /* Cap video height so full pause section fits in viewport */
