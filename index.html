@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>As We Should</title>
 
-  <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
 
   <meta name="description" content="Welcome to As We Should — a community for reflection, growth, and choosing better together." />
 
   <style>
     :root { color-scheme: dark; }
+
+    html { scroll-behavior: smooth; }
 
     body{
       margin:0;
@@ -37,9 +38,7 @@
       background: linear-gradient(135deg, #0f766e, #14532d);
     }
 
-    .hero-text{
-      max-width: 560px;
-    }
+    .hero-text{ max-width: 560px; }
 
     .brand{
       display:flex;
@@ -56,14 +55,12 @@
       background:#9fb3c8;
     }
 
-    /* PRIMARY MESSAGE */
     h1{
       font-size: clamp(38px, 6vw, 64px);
       margin:0 0 8px;
       letter-spacing:-.02em;
     }
 
-    /* SUPPORTING EMPHASIS */
     .sub-hero{
       font-size: clamp(18px, 2.5vw, 26px);
       font-style: italic;
@@ -138,6 +135,31 @@
       font-size: 14px;
     }
 
+    /* ===== PAUSE / VIDEO ===== */
+    .pause{
+      margin-top:48px;
+      padding-top:18px;
+      border-top:1px solid rgba(255,255,255,.10);
+    }
+
+    .pause-wrap{
+      max-width: 900px;
+    }
+
+    .pause-sub{
+      opacity:.85;
+      margin-bottom:18px;
+      max-width:65ch;
+    }
+
+    .pause-video{
+      width:100%;
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,.14);
+      background:#000;
+      margin-bottom:18px;
+    }
+
     /* ===== MOBILE ===== */
     @media (max-width: 860px){
       header.hero{
@@ -146,107 +168,117 @@
         padding:40px 24px;
       }
 
-      .hero-text{
-        max-width:100%;
-      }
+      .hero-text{ max-width:100%; }
 
-      .grid{
-        grid-template-columns: 1fr;
-      }
+      .grid{ grid-template-columns: 1fr; }
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
+<div class="wrap">
 
-    <!-- HERO -->
-    <header class="hero">
-      <img
-        src="assets/AWSblackBG.png"
-        alt="As We Should logo"
-        class="logo"
-      />
+  <!-- HERO -->
+  <header class="hero">
+    <img src="assets/AWSblackBG.png" alt="As We Should logo" class="logo" />
 
-      <div class="hero-text">
-        <div class="brand">
-          <span class="dot"></span>
-          <strong>Welcome</strong>
-        </div>
-
-        <!-- MAIN MESSAGE -->
-        <h1>As We Should</h1>
-
-        <!-- SUPPORTING EMPHASIS -->
-        <div class="sub-hero">
-          Welcome to the <em>Comm-Unity</em>.
-        </div>
-
-        <p class="lead">
-          This is a place for progress, which in my opinion is as close to perfection as we can come. It’s about honesty — and becoming who you say you would like to be,
-          even when no one is watching. 
-          
-          Because life is a journey that we all have in common, I believe that if we can come together and share our individual experiences, unity can and will make trials easier.
-        </p>
-
-        <div class="cta-row">
-          <a class="btn primary" href="#what-this-is">More</a>
-          <a class="btn" href="https://www.youtube.com/@AsWeShouldChannel" target="_blank" rel="noreferrer">Videos</a>
-          <a class="btn" href="https://www.instagram.com/asweshould_aws/" target="_blank" rel="noreferrer">Instagram</a>
-        </div>
-
-        <p class="muted">
-    
-        </p>
+    <div class="hero-text">
+      <div class="brand">
+        <span class="dot"></span>
+        <strong>Welcome</strong>
       </div>
-    </header>
 
-    <!-- CONTENT -->
-    <section id="what-this-is">
-      <h2>Growing together</h2>
-      <p class="muted">
-        This is a place for reflection, growth, and choosing better together.
-        We are a community, and for now, the forum is in the comments of my videos and the community section of my channel.
-        Observe, comment, ask questions. I take all input as a community and share it as one too. We rise together is the philosophy.
-      </p>
-    </section>
+      <h1>As We Should</h1>
 
-    <section>
-      <h2>Take alongs.</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>T-Shirt</h3>
-          <p class="muted">Wear the reminder.</p>
-          <a class="btn" href="#" aria-disabled="true">Coming soon</a>
-        </div>
-        <div class="card">
-          <h3>Mug</h3>
-          <p class="muted">Start the day intentional.</p>
-          <a class="btn" href="#" aria-disabled="true">Coming soon</a>
-        </div>
-        <div class="card">
-          <h3>Journal</h3>
-          <p class="muted">Write the truth before the world does.</p>
-          <a class="btn" href="#" aria-disabled="true">Coming soon</a>
-        </div>
+      <div class="sub-hero">
+        Welcome to the <em>Comm-Unity</em>.
       </div>
-    </section>
 
-    <section>
-      <h2>Close</h2>
-      <p class="muted">
-        We build. We heal. We show up.<br />
-        <strong>As We Should.</strong>
+      <p class="lead">
+        This is a place for progress — as close to perfection as we can come.
+        It’s about honesty, and becoming who you say you would like to be,
+        even when no one is watching.
       </p>
-    </section>
 
-    <footer>
-      © <span id="y"></span> youtube.com/@AsWeShouldChannel
-    </footer>
-  </div>
+      <div class="cta-row">
+        <!-- UPDATED TARGET -->
+        <a class="btn primary" href="#pause">More</a>
+        <a class="btn" href="https://www.youtube.com/@AsWeShouldChannel" target="_blank" rel="noreferrer">Videos</a>
+        <a class="btn" href="https://www.instagram.com/asweshould_aws/" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+    </div>
+  </header>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <!-- PAUSE / VIDEO STOP -->
+  <section id="pause" class="pause">
+    <div class="pause-wrap">
+      <h2>Take a moment.</h2>
+      <p class="pause-sub">
+        This isn’t motivational noise. This is from a place that is already in progress. Take what you need.
+      </p>
+
+      <!-- LOCAL VIDEO PLACEHOLDER -->
+      <video
+        class="pause-video"
+        controls
+        preload="metadata"
+        playsinline
+      >
+        <source src="assets/pause-message.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <a class="btn" href="#what-this-is">More</a>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section id="what-this-is">
+    <h2>Growing together</h2>
+    <p class="muted">
+      This is a place for reflection, growth, and choosing better together.
+      For now, the forum lives in the comments and the community section.
+      Observe, comment, ask questions. We rise together.
+    </p>
+  </section>
+
+  <section>
+    <h2>Take alongs.</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>T-Shirt</h3>
+        <p class="muted">Wear the reminder.</p>
+        <a class="btn" aria-disabled="true">Coming soon</a>
+      </div>
+      <div class="card">
+        <h3>Mug</h3>
+        <p class="muted">Start the day intentional.</p>
+        <a class="btn" aria-disabled="true">Coming soon</a>
+      </div>
+      <div class="card">
+        <h3>Journal</h3>
+        <p class="muted">Write the truth before the world does.</p>
+        <a class="btn" aria-disabled="true">Coming soon</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Do Well Family!</h2>
+    <p class="muted">
+      We build. We heal. We show up.<br />
+      <strong>As We Should.</strong>
+    </p>
+  </section>
+
+  <footer>
+    © <span id="y"></span> youtube.com/@AsWeShouldChannel
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
