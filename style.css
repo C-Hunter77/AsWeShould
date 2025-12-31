@@ -47,6 +47,41 @@
   scroll-margin-top: 36px; /* fine-tune anchor landing */
 }
 
+/* Wider hero button */
+.btn-wide{
+  padding: 14px 24px;
+  min-width: 220px;
+  text-align: center;
+}
+
+/* Pause caption + actions row */
+.pause-actions{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.pause-caption{
+  margin: 0;
+  max-width: 68ch;
+  opacity: .85;
+}
+
+.pause-buttons{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Mobile stack */
+@media (max-width: 768px){
+  .pause-actions{
+    flex-direction: column;
+  }
+}
+
 
 /* Ensure anchor jump leaves room for heading + subtext */
 section {
